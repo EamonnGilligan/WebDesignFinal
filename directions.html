@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eamonn Gilligan">
+    <meta name="MyWebsite" content="restaurant, food, hungry">
+    <meta name="keywords" content="google maps,maps,directions,contact">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="javascript.js"></script>
+    <title>Directions</title>
+    <link rel="shortcut icon" href="logo.png">
+</head>
+<body class="mapmap">
+    <header>
+        <img src="logo.png" alt="logo">
+        <h1>Italian Restaurant</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="news.html">News</a>
+        <a href="directions.html">Contact</a>
+    </nav>
+    <main>
+        <h3>Restaurant Location</h3>
+        <div class="mapouter"><div class="gmap_canvas">
+        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ATU%20sligo%20campus&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <a href="https://embedgooglemap.net/124/">Google Maps</a><br>
+        <a href="https://www.embedgooglemap.net"></a>
+        </div></div>
+        <p>I set the restaurant location to our Campus.</p>
+        <form action="file:///Users/eamonn/Desktop/WebDesignSite/directions.html" method="get">
+            your email: <input type="text" name="name">
+            <br>
+            Subject: <input type="text" name="subject">
+            <br>
+            Message: <input type="text" name="message">
+            <br>
+            <button class="button" type="submit">submit</button>
+         </form>
+    </main>
+    <aside class="audio">
+        <audio controls>
+            <source src="audio/pizzatime.mp3" type="audio/mp3">
+        </audio>
+    </aside>
+    <footer><h6>It's the italian restaurant, we italian here.</h6>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="news.html">News</a>
+        <a href="directions.html">Contact</a>
+        <a href="#top">Jump to top of page</a></footer>
+</body>
+</html>
